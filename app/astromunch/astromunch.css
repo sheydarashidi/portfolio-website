@@ -1,0 +1,260 @@
+/* Astromunch Page Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+.astromunch-main {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #474747;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  cursor: auto;
+}
+
+.astromunch-main * {
+  cursor: auto;
+}
+
+.header-photo {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.header-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 24px auto 0;
+  padding: 48px;
+  width: 100%;
+}
+
+/* 🚀 Title before text */
+.astromunch-title {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.astromunch-title::before {
+  content: "🚀";
+  font-size: 42px;
+  transform: translateY(4px);
+}
+
+.project-info-table {
+  width: 100%;
+  margin: 0 0 32px 0;
+  border-collapse: collapse;
+}
+
+.table-icon {
+  width: 32px;
+  padding: 16px 12px 16px 0;
+  vertical-align: top;
+}
+
+.table-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.table-label {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 16px 24px 16px 0;
+  width: 25%;
+  vertical-align: top;
+}
+
+.table-value {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 16px 0;
+  vertical-align: top;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.tag-visual-identity {
+  background-color: #6B4CE6;
+}
+.tag-package-design {
+  background-color: #E64C8A;
+}
+.tag-logo-design {
+  background-color: #4CBBE6;
+}
+.tag-motion {
+  background-color: #E6A44C;
+}
+
+.video-container {
+  width: 100%;
+  margin: 32px 0;
+}
+
+.video-title {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+}
+
+.logo-reveal-video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.image-container {
+  width: 100%;
+  margin: 32px 0;
+}
+
+.image-title {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Bottom table styles */
+.bottom-info-table {
+  width: 100%;
+  margin: 48px 0 32px 0;
+  border-collapse: collapse;
+}
+
+.bottom-table-label {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 16px 24px 16px 0;
+  width: 30%;
+  vertical-align: top;
+}
+
+.bottom-table-value {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 16px 0;
+  vertical-align: top;
+}
+
+/* See More Section */
+.see-more-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 64px 0 48px 0;
+}
+
+.see-more-title {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #ffffff;
+  margin: 0 0 32px 0;
+  text-align: center;
+}
+
+.see-more-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 0 0 64px 0;
+}
+
+.see-more-item {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.see-more-item:hover {
+  transform: scale(1.05);
+}
+
+.see-more-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .header-content {
+    padding: 24px 16px;
+  }
+
+  .astromunch-title {
+    font-size: 32px;
+  }
+
+  .astromunch-title::before {
+    font-size: 30px;
+  }
+
+  .image-title,
+  .video-title {
+    font-size: 14px;
+  }
+
+  .see-more-title {
+    font-size: 24px;
+  }
+
+  .see-more-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}

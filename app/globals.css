@@ -1,26 +1,249 @@
-@import "tailwindcss";
+/* app/globals.css */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ========== Global setup ========== */
+
+html {
+  scroll-behavior: smooth;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  cursor: url("/cursor-magnify.png") 16 16, auto;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ========== Desktop top reveal menu ========== */
+
+/* Navigation menu */
+.navigation-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #474747;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu container - matches page padding */
+.menu-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+}
+
+/* Invisible hover zone at the very top of the viewport */
+.menu-hover-zone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  z-index: 99;
+  pointer-events: auto;
+}
+
+/* Menu items list */
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.menu-items li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0;
+  line-height: 1.2;
+}
+
+.menu-items a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.menu-items a:hover::after {
+  width: 100%;
+}
+
+/* Hide desktop menu on mobile */
+@media (max-width: 800px) {
+  .navigation-menu,
+  .menu-hover-zone {
+    display: none;
+  }
+}
+
+/* ========== Mobile Menu ========== */
+
+/* Mobile logo */
+.mobile-logo {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 150;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.mobile-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mobile-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Show mobile logo on tablets and mobile */
+@media (max-width: 800px) {
+  .mobile-logo {
+    display: block;
+  }
+}
+
+/* Mobile menu button */
+.mobile-menu-button {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 150;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mobile-menu-button:hover {
+  transform: scale(1.1);
+}
+
+/* Show mobile menu button on tablets and mobile */
+@media (max-width: 800px) {
+  .mobile-menu-button {
+    display: block;
+  }
+}
+
+/* Mobile menu overlay */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 140;
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 800px) {
+  .mobile-menu-overlay {
+    display: block;
+  }
+}
+
+/* Mobile menu content */
+.mobile-menu-content {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: #474747;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  min-width: 200px;
+}
+
+/* Mobile menu items */
+.mobile-menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mobile-menu-items li {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu-items a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 8px 0;
+  position: relative;
+}
+
+.mobile-menu-items a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.mobile-menu-items a:hover::after {
+  width: 100%;
 }
