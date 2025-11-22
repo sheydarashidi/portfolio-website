@@ -112,14 +112,10 @@ export default function Navigation() {
               </li>
               <li>
                 <a
-                  href="/#cv"
-                  onClick={(e) => {
-                    if (window.location.pathname === '/') {
-                      e.preventDefault();
-                      document.getElementById('cv')?.scrollIntoView({ behavior: 'smooth' });
-                    }
-                    setShowMobileMenu(false);
-                  }}
+                  href="/home/Sheyda-Rashidi-CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setShowMobileMenu(false)}
                 >
                   CV
                 </a>
@@ -176,13 +172,9 @@ export default function Navigation() {
             </li>
             <li>
               <a
-                href="/#cv"
-                onClick={(e) => {
-                  if (window.location.pathname === '/') {
-                    e.preventDefault();
-                    document.getElementById('cv')?.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
+                href="/home/Sheyda-Rashidi-CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 CV
               </a>
