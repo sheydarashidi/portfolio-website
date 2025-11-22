@@ -167,7 +167,7 @@ export default function Afba1Page() {
             <img src="/trueiran/1.jpg" alt="True Colors of Iran" />
           </a>
           <a href="/papco" className="see-more-item">
-            <img src="/papco/1.jpg" alt="Papco" />
+            <img src="/Papco/1.jpg" alt="Papco" />
           </a>
           <a href="/social-media" className="see-more-item">
             <img src="/Socialmedia/1.jpeg" alt="Social Media Content" />
@@ -179,7 +179,7 @@ export default function Afba1Page() {
             <img src="/motion/1.jpg" alt="Motion Graphics" />
           </a>
           <a href="/haironik" className="see-more-item">
-            <img src="/haironik/1.jpg" alt="Haironik" />
+            <img src="/Haironik/1.jpg" alt="Haironik" />
           </a>
           <a href="/astromunch" className="see-more-item">
             <img src="/astromunch/1.jpg" alt="Astromunch" />

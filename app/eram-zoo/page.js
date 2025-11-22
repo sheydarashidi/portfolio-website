@@ -103,7 +103,7 @@ export default function EramZooPage() {
         <h2 className="see-more-title">Wanna see more?</h2>
         <div className="see-more-gallery">
           <a href="/haironik" className="see-more-item">
-            <img src="/haironik/1.jpg" alt="Haironik" />
+            <img src="/Haironik/1.jpg" alt="Haironik" />
           </a>
           <a href="/afba1" className="see-more-item">
             <img src="/afba1/1.jpg" alt="AFBA #1" />
@@ -115,7 +115,7 @@ export default function EramZooPage() {
             <img src="/motion/1.jpg" alt="Motion Graphics" />
           </a>
           <a href="/papco" className="see-more-item">
-            <img src="/papco/1.jpg" alt="Papco" />
+            <img src="/Papco/1.jpg" alt="Papco" />
           </a>
           <a href="/true-iran" className="see-more-item">
             <img src="/trueiran/1.jpg" alt="True Colors of Iran" />

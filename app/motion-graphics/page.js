@@ -147,10 +147,10 @@ export default function MotionGraphicsPage() {
             <img src="/trueiran/1.jpg" alt="True Colors of Iran" />
           </a>
           <a href="/papco" className="see-more-item">
-            <img src="/papco/1.jpg" alt="Papco" />
+            <img src="/Papco/1.jpg" alt="Papco" />
           </a>
           <a href="/haironik" className="see-more-item">
-            <img src="/haironik/1.jpg" alt="Haironik" />
+            <img src="/Haironik/1.jpg" alt="Haironik" />
           </a>
           <a href="/afba2" className="see-more-item">
             <img src="/afba2/1.jpg" alt="AFBA #2" />

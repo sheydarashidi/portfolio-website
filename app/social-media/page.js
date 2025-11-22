@@ -106,7 +106,7 @@ export default function SocialMediaPage() {
             <img src="/astromunch/1.jpg" alt="Astromunch" />
           </a>
           <a href="/haironik" className="see-more-item">
-            <img src="/haironik/1.jpg" alt="Haironik" />
+            <img src="/Haironik/1.jpg" alt="Haironik" />
           </a>
           <a href="/true-iran" className="see-more-item">
             <img src="/trueiran/1.jpg" alt="True Colors of Iran" />
@@ -115,7 +115,7 @@ export default function SocialMediaPage() {
             <img src="/motion/1.jpg" alt="Motion Graphics" />
           </a>
           <a href="/papco" className="see-more-item">
-            <img src="/papco/1.jpg" alt="Papco" />
+            <img src="/Papco/1.jpg" alt="Papco" />
           </a>
           <a href="/afba1" className="see-more-item">
             <img src="/afba1/1.jpg" alt="AFBA #1" />

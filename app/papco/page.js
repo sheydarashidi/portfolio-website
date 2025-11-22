@@ -6,7 +6,7 @@ export default function PapcoPage() {
   return (
     <main className="papco-main">
       <div className="header-photo">
-        <img src="/papco/1.jpg" alt="Papco Header" />
+        <img src="/Papco/1.jpg" alt="Papco Header" />
       </div>
 
       <div className="header-content">
@@ -17,7 +17,7 @@ export default function PapcoPage() {
           <tbody>
             <tr>
               <td className="table-icon">
-                <img src="/papco/tags.png" alt="Tags" />
+                <img src="/Papco/tags.png" alt="Tags" />
               </td>
               <td className="table-label">Tags</td>
               <td className="table-value">
@@ -29,7 +29,7 @@ export default function PapcoPage() {
 
             <tr>
               <td className="table-icon">
-                <img src="/papco/date.png" alt="Date" />
+                <img src="/Papco/date.png" alt="Date" />
               </td>
               <td className="table-label">Date</td>
               <td className="table-value">2020</td>
@@ -37,7 +37,7 @@ export default function PapcoPage() {
 
             <tr>
               <td className="table-icon">
-                <img src="/papco/collaborators.png" alt="Collaborators" />
+                <img src="/Papco/collaborators.png" alt="Collaborators" />
               </td>
               <td className="table-label">Collaborators</td>
               <td className="table-value">PAPCO Inc., CNT House</td>
@@ -45,7 +45,7 @@ export default function PapcoPage() {
 
             <tr>
               <td className="table-icon">
-                <img src="/papco/myrole.png" alt="My Role" />
+                <img src="/Papco/myrole.png" alt="My Role" />
               </td>
               <td className="table-label">My Role</td>
               <td className="table-value">
@@ -57,23 +57,23 @@ export default function PapcoPage() {
 
         {/* Project Images */}
         <div className="image-container">
-          <img src="/papco/2.jpg" alt="Papco Image 2" className="project-image" />
+          <img src="/Papco/2.jpg" alt="Papco Image 2" className="project-image" />
         </div>
 
         <div className="image-container">
-          <img src="/papco/3.jpg" alt="Papco Image 3" className="project-image" />
+          <img src="/Papco/3.jpg" alt="Papco Image 3" className="project-image" />
         </div>
 
         <div className="image-container">
-          <img src="/papco/4.jpeg" alt="Papco Image 4" className="project-image" />
+          <img src="/Papco/4.jpeg" alt="Papco Image 4" className="project-image" />
         </div>
 
         <div className="image-container">
-          <img src="/papco/5.jpeg" alt="Papco Image 5" className="project-image" />
+          <img src="/Papco/5.jpeg" alt="Papco Image 5" className="project-image" />
         </div>
 
         <div className="image-container">
-          <img src="/papco/6.jpg" alt="Papco Image 6" className="project-image" />
+          <img src="/Papco/6.jpg" alt="Papco Image 6" className="project-image" />
         </div>
 
         {/* Bottom table with Tools and Reflections */}
@@ -107,7 +107,7 @@ export default function PapcoPage() {
             <img src="/eramzoo/1.jpg" alt="Eram Zoo" />
           </a>
           <a href="/haironik" className="see-more-item">
-            <img src="/haironik/1.jpg" alt="Haironik" />
+            <img src="/Haironik/1.jpg" alt="Haironik" />
           </a>
           <a href="/astromunch" className="see-more-item">
             <img src="/astromunch/1.jpg" alt="Astromunch" />

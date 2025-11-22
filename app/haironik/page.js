@@ -6,7 +6,7 @@ export default function HaironikPage() {
   return (
     <main className="haironik-main">
       <div className="header-photo">
-        <img src="/haironik/1.jpg" alt="Haironik Header" />
+        <img src="/Haironik/1.jpg" alt="Haironik Header" />
       </div>
 
       <div className="header-content">
@@ -17,7 +17,7 @@ export default function HaironikPage() {
           <tbody>
             <tr>
               <td className="table-icon">
-                <img src="/haironik/tags.png" alt="Tags" />
+                <img src="/Haironik/tags.png" alt="Tags" />
               </td>
               <td className="table-label">Tags</td>
               <td className="table-value">
@@ -30,7 +30,7 @@ export default function HaironikPage() {
 
             <tr>
               <td className="table-icon">
-                <img src="/haironik/date.png" alt="Date" />
+                <img src="/Haironik/date.png" alt="Date" />
               </td>
               <td className="table-label">Date</td>
               <td className="table-value">2022</td>
@@ -38,7 +38,7 @@ export default function HaironikPage() {
 
             <tr>
               <td className="table-icon">
-                <img src="/haironik/collaborators.png" alt="Collaborators" />
+                <img src="/Haironik/collaborators.png" alt="Collaborators" />
               </td>
               <td className="table-label">Collaborators</td>
               <td className="table-value">Carno Studio, Haironik Inc.</td>
@@ -46,7 +46,7 @@ export default function HaironikPage() {
 
             <tr>
               <td className="table-icon">
-                <img src="/haironik/myrole.png" alt="My Role" />
+                <img src="/Haironik/myrole.png" alt="My Role" />
               </td>
               <td className="table-label">My Role</td>
               <td className="table-value">
@@ -58,19 +58,19 @@ export default function HaironikPage() {
 
         {/* Project Images */}
         <div className="image-container">
-          <img src="/haironik/2.jpg" alt="Haironik Image 2" className="project-image" />
+          <img src="/Haironik/2.jpg" alt="Haironik Image 2" className="project-image" />
         </div>
 
         <div className="image-container">
-          <img src="/haironik/3.jpg" alt="Haironik Image 3" className="project-image" />
+          <img src="/Haironik/3.jpg" alt="Haironik Image 3" className="project-image" />
         </div>
 
         <div className="image-container">
-          <img src="/haironik/4.jpg" alt="Haironik Image 4" className="project-image" />
+          <img src="/Haironik/4.jpg" alt="Haironik Image 4" className="project-image" />
         </div>
 
         <div className="image-container">
-          <img src="/haironik/5.jpg" alt="Haironik Image 5" className="project-image" />
+          <img src="/Haironik/5.jpg" alt="Haironik Image 5" className="project-image" />
         </div>
 
         {/* Bottom table with Tools and Reflections */}
@@ -98,7 +98,7 @@ export default function HaironikPage() {
             <img src="/trueiran/1.jpg" alt="True Colors of Iran" />
           </a>
           <a href="/papco" className="see-more-item">
-            <img src="/papco/1.jpg" alt="Papco" />
+            <img src="/Papco/1.jpg" alt="Papco" />
           </a>
           <a href="/social-media" className="see-more-item">
             <img src="/Socialmedia/1.jpeg" alt="Social Media Content" />
